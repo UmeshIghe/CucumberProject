@@ -1,0 +1,56 @@
+{
+    "HotelListResponse": {
+        "customerSessionId": "0ABAAA83-04C7-5B91-40A2-754D7299476C",
+        "numberOfRoomsRequested": 1,
+        "moreResultsAvailable": true,
+        "cacheKey": "-4804c75b:140a754d729:4da2",
+        "cacheLocation": "10.186.170.131:7300",
+        "HotelList": {
+            "@activePropertyCount": "1157",
+            "@size": "1",
+            "HotelSummary": {
+                "@order": "0",
+                "hotelId": 403147,
+                "name": "Justabed - Hostel",
+                "address1": "38 avenue augustin dumont",
+                "city": "Malakoff",
+                "postalCode": 92240,
+                "countryCode": "FR",
+                "airportCode": "   ",
+                "supplierType": "E",
+                "propertyCategory": 5,
+                "hotelRating": 0,
+                "confidenceRating": 52,
+                "amenityMask": 8,
+                "tripAdvisorRating": 1.5,
+                "locationDescription": "Near Paris Expo Porte de Versailles",
+                "shortDescription": "&lt;p&gt;&lt;b&gt;Property Location&lt;/b&gt; &lt;br /&gt;With a stay at Justabed in Vanves, you&apos;ll be close to Stade de la Plaine and Eiffel Tower.&lt;br/&gt; This hostel is within close proximity of Georges Brassens Park and",
+                "highRate": 24.87,
+                "lowRate": 24.87,
+                "rateCurrencyCode": "EUR",
+                "latitude": 48.81804,
+                "longitude": 2.30196,
+                "proximityDistance": 2.5680416,
+                "proximityUnit": "MI",
+                "hotelInDestination": true,
+                "thumbNailUrl": "/hotels/5000000/4850000/4849100/4849100/4849100_7_t.jpg",
+                "deepLink": "http://travel.ian.com/index.jsp?pageName=hotAvail&amp;cid=55505&amp;hotelID=403147&amp;mode=2&amp;numberOfRooms=1&amp;room-0-adult-total=1&amp;room-0-child-total=0&amp;arrivalMonth=8&amp;arrivalDay=18&amp;departureMonth=8&amp;departureDay=21&amp;showInfo=true&amp;locale=en_US&amp;currencyCode=EUR",
+                "RoomRateDetailsList": {
+                    "RoomRateDetails": {
+                        "roomTypeCode": 200166353,
+                        "rateCode": 201887482,
+                        "maxRoomOccupancy": 1,
+                        "quotedRoomOccupancy": 1,
+                        "minGuestAge": 3,
+                        "roomDescription": "Single Beds in Mixed Dormitory Room - Non refundable",
+                        "currentAllotment": 8,
+                        "propertyAvailable": true,
+                        "propertyRestricted": false,
+                        "expediaPropertyId": 4849100,
+                        "rateKey": "0ABAAA83-04C7-5B91-40A2-754D72994DA3"                      
+                    }
+                }
+            }
+        }
+    }
+}

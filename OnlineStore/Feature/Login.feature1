@@ -1,0 +1,14 @@
+
+Feature: Login Feature
+
+@tag2
+Scenario: Sucessful login
+Given User login with valid username and pwd
+When User click on submit button
+Then Home page should display
+
+@tag3	
+Scenario: Unsucessfull login
+Given User login with invalid username and pwd
+When user click on submit button
+Then User should get error msg 
