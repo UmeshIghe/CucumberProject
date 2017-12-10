@@ -1,5 +1,7 @@
 package webpages;
 
+import com.gargoylesoftware.htmlunit.ElementNotFoundException;
+
 import cucumberTest.WebUtil;
 
 public class GmailHomePage {
@@ -10,20 +12,39 @@ public class GmailHomePage {
 	String errMsg = "//*[@id='password']/div[2]/div[2]";
 
 	public void enterUserName(String username) {
-		WebUtil.enterTextBox(userNameTxtBx, username);
-		// DriverClass.driver.findElement(By.xpath(userNameTxtBx)).sendKeys(username);
-		WebUtil.click(nextBtn);
-		// clickNext();
+		try {
+			WebUtil.enterTextBox(userNameTxtBx, username);
+			WebUtil.click(nextBtn);
+		} catch (ElementNotFoundException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void enterPwd(String password) {
-		WebUtil.enterTextBox(pwdTxtBx, password);
-		WebUtil.click(nextBtn);
+		try {
+			WebUtil.enterTextBox(pwdTxtBx, password);
+			WebUtil.click(nextBtn);
+		} catch (ElementNotFoundException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	public String verifyErrMsg() {
-		return WebUtil.getText(errMsg);
-
+		String msg = null;
+		try {
+			msg = WebUtil.getText(errMsg);
+			WebUtil.takeScreenShot();
+		} catch (ElementNotFoundException e) {
+			WebUtil.takeScreenShot();
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return msg;
 	}
 
 }
